@@ -18,7 +18,6 @@ import * as yup from "yup";
 import LoginSide from "../../Assets/Images/LoginSide.png";
 import DarkLogo from "../../Assets/Images/loginLogo.png";
 import Logo from "../../Assets/Images/loginLogo.png";
-import LogoText from "../../Assets/Images/LogoText.png";
 const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
 });
@@ -176,30 +175,15 @@ export default function SignIn() {
               display: "flex",
               flexDirection: "column",
               alignItems: "flex-start",
-              justifyContent: "flex-start",
+              justifyContent: "center",
               marginTop: "5%",
             }}
           >
-            <Box className="flex flex-row justify-center items-center mb-3">
-              <img src={DarkLogo} alt="" className="ml-3"></img>
-              {/* <img
-                src={LogoText}
-                alt=""
-                className="ml-3 w-[168px] h-[60px]"
-              ></img> */}
-              <Typography
-                color={"#7398FC"}
-                textAlign={"justify"}
-                marginLeft={4}
-                fontWeight={400}
-                fontSize={26}
-              >
-                Feed <br /> Formulation
-              </Typography>
-            </Box>
+            <img src={DarkLogo} alt="" className="ml-3"></img>
+
             <Typography
               width={"70%"}
-              color={"#7398FC"}
+              color={"white"}
               mb={3}
               textAlign={"justify"}
               marginLeft={4}
@@ -207,7 +191,7 @@ export default function SignIn() {
               fontSize={20}
               className="mb-4"
             >
-              Elevate Livestock Care With Our Feed Options
+              Digitizing Ancient Money Circles
             </Typography>
           </Box>
         </Grid>
@@ -218,12 +202,6 @@ export default function SignIn() {
           md={6}
           lg={6}
           component={show ? Paper : "div"}
-          background={"#242449"}
-          style={{
-            background: "#242449",
-            backgroundColor: "#242449",
-            borderRadius: "0px",
-          }}
         >
           <Box
             sx={{
@@ -235,17 +213,7 @@ export default function SignIn() {
             }}
             mx={{ xs: 4, lg: 12 }}
           >
-            <Typography
-              component="h1"
-              variant="h4"
-              fontWeight={500}
-              className="w-[122px] h-[122px] flex justify-center items-center"
-              style={{
-                borderRadius: "80px",
-                border: "1px solid #7398FC",
-                background: "#161630",
-              }}
-            >
+            <Typography component="h1" variant="h4" fontWeight={500}>
               <img src={Logo} alt="" />
             </Typography>
             <Typography
@@ -254,7 +222,6 @@ export default function SignIn() {
               textAlign={"justify"}
               fontWeight={500}
               marginTop={1}
-              color={"#7398FC"}
             >
               Login
             </Typography>
@@ -270,8 +237,7 @@ export default function SignIn() {
                   required
                   style={{
                     width: "480px",
-                    background: "#161630",
-                    color: "white",
+                    background: "#EAEEF7",
                   }}
                   id="email"
                   label="Email Address"
@@ -279,27 +245,7 @@ export default function SignIn() {
                   autoComplete="email"
                   autoFocus
                   color="success"
-                  sx={{
-                    marginBottom: 3,
-                    color: "white",
-                    "& .MuiInputBase-input": {
-                      color: "white", // Text color for the input
-                    },
-                    "& .MuiInputLabel-root": {
-                      color: "white", // Text color for the label
-                    },
-                    "& .MuiFormHelperText-root": {
-                      color: "white", // Text color for the helper text (if any)
-                    },
-                    // "& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline":
-                    //   {
-                    //     borderColor: "ba", // Border color for the outline
-                    //   },
-                    // "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
-                    //   {
-                    //     borderColor: "white", // Border color for the outline when focused
-                    //   },
-                  }}
+                  sx={{ marginBottom: 3 }}
                   error={!!error?.email && touched?.email}
                   // helperText={touched.email ? error.email : ""}
                   onChange={handleInputChange}
@@ -307,7 +253,7 @@ export default function SignIn() {
                 />
                 <FormHelperText
                   style={{
-                    background: "#242449",
+                    background: "white",
                     color: "red",
                     margin: "-23px 0px 0px 0px",
                   }}
@@ -322,7 +268,7 @@ export default function SignIn() {
                   required
                   style={{
                     width: "480px",
-                    background: "#161630",
+                    background: "#EAEEF7",
                   }}
                   name="password"
                   label="Password"
@@ -334,21 +280,10 @@ export default function SignIn() {
                   // helperText={touched?.password ? error?.password : ""}
                   onChange={handleInputChange}
                   onBlur={handleBlur}
-                  sx={{
-                    "& .MuiInputBase-input": {
-                      color: "white", // Text color for the input
-                    },
-                    "& .MuiInputLabel-root": {
-                      color: "white", // Text color for the label
-                    },
-                    "& .MuiFormHelperText-root": {
-                      color: "white", // Text color for the helper text (if any)
-                    },
-                  }}
                 />
                 <FormHelperText
                   style={{
-                    background: "#242449",
+                    background: "white",
                     color: "red",
                     margin: "-6px 0px 0px 0px",
                   }}
@@ -358,10 +293,7 @@ export default function SignIn() {
               </FormControl>
               <Link2
                 to="/forget-password"
-                className="flex justify-end w-[83%]  cursor-pointer no-underline forget mt-4"
-                style={{
-                  color: "white",
-                }}
+                className="flex justify-end w-[73%]  cursor-pointer no-underline forget mt-4"
               >
                 Forget Password?
               </Link2>
@@ -373,18 +305,13 @@ export default function SignIn() {
                 sx={{
                   mt: 3,
                   mb: 2,
-                  backgroundColor: "#39396A",
+                  backgroundColor: "#76D0B7",
                   padding: "15px 0px",
                   width: "480px",
                   height: "48px",
-                  color: "white",
                 }}
                 disabled={isDisable}
-                className=""
-                style={{
-                  background: "#39396A",
-                  color: "white",
-                }}
+                className="dropdown color"
               >
                 Sign In
               </Button>
