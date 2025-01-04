@@ -1,0 +1,712 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F5F6FA;
+  background: #F5F6FA;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* .w-90{
+  width:90%;
+}
+.w-10{
+  width: 10%;
+} */
+
+.active-nav{
+  background-color: white;
+    color: black;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  background-color: #76D0B7;
+  position: fixed;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: white;
+  color: black;
+  width: 100%;
+  border-radius: 10px;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* @media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+} */
+ .stan-color{
+  color: #76D0B7
+ }
+
+.forget{
+  color: #868686
+}
+
+
+.css-qp6gmo-MuiLinearProgress-root{
+  height: 9px !important;
+  border-radius: 10px;
+}
+
+.css-height{
+  height: 9px !important;
+  border-radius: 10px;
+}
+
+
+.marginRight{
+  margin-right: 20px !important;
+}
+
+
+.marginLeft{
+  margin-left: 20px !important;
+}
+.css-1hyih5b-MuiButtonBase-root-MuiButton-root:hover{
+  background-color: #76D0B7;
+}
+
+.css-10r9shf-MuiButtonBase-root-MuiButton-root:hover{
+  background-color: #76D0B7 !important;
+
+}
+
+.color:hover{
+  background-color: #76D0B7 !important;
+}
+
+.ag-header.ag-header-allow-overflow .ag-header-row{
+  background-color:   #F1F4F9;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+
+
+li {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+/* 
+.navbar{
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-start;
+}
+
+.mlimp{
+  margin-right: 5px !important;
+} */
+
+.heading{
+  font-family:  "Nunito Sans";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+
+.font-fam-nunito{
+  font-family:  "Nunito Sans";
+}
+
+.header-heading{
+  font-family:  "Nunito Sans";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+} 
+
+
+
+.header-head{
+  font-family:  "Nunito Sans";
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 19px;
+} 
+.header-subHeading{
+  font-family:  "Nunito Sans";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16.37px;
+} 
+
+
+.body-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px 25px 48px 250px;
+    background: #f5f6fa;
+}
+
+
+.logout-btn{
+  padding: 10px 29px;
+  background: #76d0b7;
+  border-radius: 8px;
+  color: white;
+
+}
+
+.nav-link{
+  font-size: 15px;
+  font-weight: 500;
+}
+.body-padding{
+  margin-left: 250px;
+}
+
+.box-shadow{
+  box-shadow: 6px 6px 54px 0px #0000000D;
+  padding: 29px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.w-50p{
+  width: 50%;
+}
+
+/*  DashBoard Screen   */
+
+.w-262{
+  width: 262px;
+}
+.w-249{
+  width: 270px;
+  height: 100px;
+}
+
+.img-wh
+{
+  width: 60px;
+  height: 60px;
+}
+.font-style{
+  font-family: 'Nunito Sans';
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 47.7px;
+}
+
+
+.btn-style{
+  border: none;
+  text-decoration: underline;
+  width: 60px;
+  color: #283593;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+.breadcrumbs{
+  color: #868686;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.btn-style:focus{
+  border: none;
+  outline: none;
+}
+
+
+.font-sub-style{
+  font-family: 'Nunito Sans';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19.1px;
+}
+
+
+.btn-table-style{
+  padding: 2px 16px;
+  margin-left: 4px;
+  border-radius: 15px;
+}
+
+.btn-table-icon{
+  padding: 7px 8px;
+  margin-left: 4px;
+  border-radius: 15px;
+}
+
+
+.btn-table-style:focus{
+  outline: none;
+  
+}
+
+.table-style{
+  background: #edf1f8;
+  padding: 20px 0px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.font-fam{
+  font-family: 'Nunito Sans';
+}
+
+.w-14{
+  width: 14.28%;
+}
+
+.custom-ag-grid .ag-cell {
+  margin-top: 16px;
+  font-family: 'Nunito Sans';
+  font-size: 16px;
+}
+.ag-header, .ag-advanced-filter-header{
+  border: 0px
+}
+
+.ag-root-wrapper.ag-layout-normal{
+  border: 0px;
+}
+
+.ag-header-cell-label{
+    font-family: 'Nunito Sans';
+}
+
+.ag-header-cell-text{
+  font-weight: 800;
+    font-size: 16px;
+    font-family: 'Nunito Sans';
+}
+
+.custom-ag-grid .ag-cell:focus-within{
+  outline: none !important;
+  border: none !important;
+}
+
+.dropdown:focus{
+  outline: none;
+  border: none;
+}
+
+.w-25{
+  width: 25%
+}
+
+.w-75{
+  width: 75%
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border-radius: 80px;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.border-box{
+  border: 1px solid #F1F1F1;
+  border-radius: 15px;
+}
+
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-active{
+  color: #76D0B7 !important
+}
+
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed{
+  color: #76D0B7 !important
+}
+
+.css-1086bdv-MuiPaper-root-MuiAccordion-root{
+  box-shadow: none !important;
+  background-color: #76D0B7 !important;
+  position: static !important;
+}
+
+.background{
+  background: #76D0B7 ;
+}
+
+.css-1f773le-MuiButtonBase-root-MuiAccordionSummary-root{
+  background : white  !important;
+  border-bottom: 1px Solid  #979797 !important;
+
+}
+
+
+.css-1f773le-MuiButtonBase-root-MuiAccordionSummary-root:hover{
+  background : lightgray;
+}
+
+
+.bgd-input{
+    background: #F5F6FA;
+}
+
+
+.label{
+  font-family: 'Nunito Sans';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19.1px;
+  color:#606060
+}
+
+
+.card{
+  box-shadow: 6px 6px 54px 0px #0000000D;
+  border-radius: 10px;
+  background-color: "#F5F6FA";
+  margin-top: 10px;
+  border: none;
+  padding : 29px
+}
+
+
+
+
+
+
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #F9A456;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.gray{
+  color: #C4C4C4;
+
+}
+
+
+.box-sdw{
+  box-shadow: none !important;
+}
+
+.ReactModal__Overlay{
+  background-color: rgb(118, 208, 183, 0.75) !important;
+  z-index: 999;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #E5E5E5;
+  -webkit-transition: .4s;
+  transition: .4s;
+
+
+
+  /* position: absolute;
+  content: "";
+  height: 35px;
+  width: 53px;
+  left: -7px;
+  bottom: 0px;
+  background-color: 
+  #E5E5E5;
+  transition: .4s */
+}
+
+
+.toast-center {
+  text-align: center;
+}
+
+
+/* .slider:after {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 10px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+} */
+
+
+
+.box-design{
+  width: 100%;
+height: 133px;
+top: 611px;
+left: 325px;
+gap: 0px;
+border-radius: 12px 12px 12px 12px;
+/* opacity: 0px; */
+}
+
+
+.box-design-dynamic{
+  width: 100%;
+height: auto;
+top: 611px;
+left: 325px;
+gap: 0px;
+border-radius: 12px 12px 12px 12px;
+/* opacity: 0px; */
+}
+
+input:checked + .slider {
+  background-color: #00B69B;
+}
+
+
+.slider-text{
+  font-family: Nunito Sans;
+font-size: 14px;
+font-weight: 700;
+line-height: 19.1px;
+text-align: left;
+
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #76d0b7;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(67px);
+  -ms-transform: translateX(67px);
+  transform: translateX(62px);
+}
+
+.mt-imp{
+  margin-top: 12px !important
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.css-1pqm26d-MuiAvatar-img{
+  border-radius: 72px !important;
+}
+
+
+.accord-detail{
+  background-color: white;
+  background: white;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  z-index: 1000; /* ensure it's above previous content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.progress-container {
+  position: relative;
+}
+
+.circles {
+  height: 50vmin;
+  position: relative;
+  width: 50vmin;
+  
+  > div {
+    animation: growAndFade 3s infinite ease-out;
+    background-color: #76D0B7;
+    border-radius: 50%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .circle1 {
+    animation-delay: 0s;    
+  }
+  .circle2 {
+    animation-delay: 1s; 
+  }
+  .circle3 {
+    animation-delay: 2s;
+  }
+}
+
+@keyframes growAndFade {
+  0% {
+    opacity: .25;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+
+
+.paid-btn{
+  color: black;
+  background: rgba(0, 182, 155, 0.4);
+  text-align: center;
+  padding: 6px 6px;
+  border-radius: 25px;
+  width: 70px;
+}
+
+.unpaid-btn{
+  color: black;
+  background: rgba(0, 182, 155, 0.4);
+  text-align: center;
+  padding: 6px 6px;
+  border-radius: 25px;
+  width: 80px;
+}
+
+
+
+.css-1wc848c-MuiFormHelperText-root.Mui-error{
+  background:  white;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
